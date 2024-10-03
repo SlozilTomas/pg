@@ -3,9 +3,9 @@ def hello():
 
 def sudy_lichy(cislo):
     if (cislo%2==1):
-        print("Cislo je liche.")
+        print(f"Cislo {cislo} je liche.")
     else:
-        print("Cislo je sude.")
+        print(f"Cislo {cislo} je sude.")
 
 sudy_lichy(5)
 sudy_lichy(1000000)
