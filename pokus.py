@@ -1,6 +1,10 @@
-def main(parametr):
-  print(f"Parametr obsahuje {parametr}")
+import sys
+
+def main(soubor):
+  otevreny_soubor = open(soubor, "r")
+  for radka in otevreny_soubor:
+    print(radka)
 
 if __name__ == "__main__":
-  jmeno = input("Zadej jmeno:")
-  main(jmeno)
+  soubor = sys.argv[1]
+  main(soubor)
